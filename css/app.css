@@ -1,0 +1,73 @@
+
+@font-face {
+    font-family: Chalk;
+    src: url(../fonts/KGNoRegretsSketch.ttf);
+}
+
+a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+a:active, a:visited, a:link {
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    font-family: Chalk, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 20px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.centralize {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .centralize {
+        width: 90%;
+    }
+}
+
+.header-info-tel {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-info-tel {
+        font-size: 24px;
+    }
+}

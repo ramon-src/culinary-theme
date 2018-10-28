@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Paejas - Dom Herminato </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <section id="home" class="section">
+        <div class="centralize">
+            <div class="header-info-tel">
+               <a href="tel:+5551992470311">51 99247-0311</a>
+            </div>
+            <div class="home-container-logo">
+                <h1 class="home-logo-description-top">Dom Herminato</h1>
+                <img src="img/logo.png" class="home-logo">
+                <h1 class="home-logo-description-bottom">Paejas</h1>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="centralize">
+            <div class="header-info-tel">
+
+            </div>
+            <div class="home-container-logo">
+                <h1 class="home-logo-description-top">Dom Herminato</h1>
+                <img src="img/logo.png" class="home-logo">
+                <h1 class="home-logo-description-bottom">Paejas</h1>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.nav').click(function() {
+            var id = $(this).attr('id');
+            $('html, body').animate({
+                scrollTop: ($('#' + id + '.section').offset().top)
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
